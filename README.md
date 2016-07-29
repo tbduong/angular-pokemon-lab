@@ -7,7 +7,7 @@
 | Get practice building an Angular client side |
 | Use $http to access a RESTful API |
 
-![](http://pa1.narvii.com/5816/ad020f8c79222aceb67a90cce51a9103bc5911ec_hq.gif)
+![](http://pa1.narvii.com/5816/ad020f8c79222aceb67a90cce51a9103bc5911ec_hq.gif =400x)
 
 > NOTE: For ease of coding, a singular pokemon will be called a poke; the plural form will be pokemon.  
 
@@ -46,6 +46,8 @@ Your finished product will
     	* The edit form will have a save button that sends the edits to the database and, when successfully updated, redirects the user to the home page.
     * have a cancel button that does not save any of the changes the user just made.
 
+
+![](http://cdn.pokestache.com/2014/3/15/de964d3caf9ea5e0b5fe0718dc7a0a98.gif =400x)
 ## Getting Started
 
 1. Fork this repo, and clone it into your `wdi` folder on your local machine.
@@ -75,7 +77,7 @@ Your finished product will
 5. **Form validation** Check for quality poke-info before a pokmeon is allowed to enter the Pokemon database.
 
 ## Questions? Frustrations? Don't fret! Slack your friends or read some documentations!
-![](http://i.giphy.com/3oEjHCXDIwTkO5gxmo.gif)
+![](http://i.giphy.com/3oEjHCXDIwTkO5gxmo.gif =400x)
 ## Submission
 
 Make a pull request with a 0 - 5 rating of your comfort of the assignment, a 0 - 5 rating of your completeness on the assignment, and a note on your experience completing the lab. Make sure your pull request is going to `sf-wdi-30/angular-pokemon-lab`. *Check the base fork before you submit!*
