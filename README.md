@@ -52,6 +52,20 @@ Your finished product will
 3. If you see no errors, you're ready to start CRUDing! Build your layout, build your controllers, catch a Squirtle, win.
 4. Research the Pokemon API Endpoint [here](https://github.com/SF-WDI-LABS/super-crud-api)
 
+#### Separate assets into directories `scripts`, `styles`
+
+<pre>
+├── README.md
+├── index.html
+├── scripts
+│   └── app.js
+├── styles
+│   └── styles.css
+└── images
+    └── spinner.gif
+</pre>
+
+
 ## Stretch Challenges
 
 2. **Allow the user to edit the poke image:** allow the user to change the URL for the poke image.
