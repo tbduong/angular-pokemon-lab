@@ -56,6 +56,8 @@ Your finished product will
 
 2. **Allow the user to edit the poke image:** allow the user to change the URL for the poke image.
 3. **Add filters to organize the pokemon index page:** add a search bar to filter the pokemon by your search, or buttons to sort them alphabetically by name or element.
+4. **Add a button to reverse the pokemon display** Searching by name? Research toggle state and toggle the results in reverse order. 
+5. **Form validation** Check for quality poke-info before a pokmeon is allowed to enter the Pokemon database.
 
 ## Submission
 
