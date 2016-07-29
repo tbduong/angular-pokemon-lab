@@ -73,6 +73,8 @@ Your finished product will
 4. **Add a button to reverse the pokemon display** Searching by name? Research toggle state and toggle the results in reverse order. 
 5. **Form validation** Check for quality poke-info before a pokmeon is allowed to enter the Pokemon database.
 
+## Questions? Frustrations? Don't fret! Slack your friends or read some documentations!
+![](http://i.giphy.com/3oEjHCXDIwTkO5gxmo.gif)
 ## Submission
 
 Make a pull request with a 0 - 5 rating of your comfort of the assignment, a 0 - 5 rating of your completeness on the assignment, and a note on your experience completing the lab. Make sure your pull request is going to `sf-wdi-30/angular-pokemon-lab`. *Check the base fork before you submit!*
