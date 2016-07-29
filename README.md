@@ -39,12 +39,12 @@ Your finished product will
   1. Successfully navigate to an index.html *(hint: no serving!)*. That page will:
     * display all of the pokemon.
     * show the image, name, element, strength, and weakness for each poke.
-    * include a link to the show poke page on the name of each poke.
-  2. For each pokemon in the index have the following:
-    * a delete button that deletes the specific poke from the database and, when successfully deleted, removes that pokemon entry from the pokemon index page.
+    * display a form for creating a new poke.
+  3. For each pokemon in the index have the following:
+    * a delete button that deletes the specific poke from the database and, if successful, removes that pokemon entry from the page.
     * an edit button that reveals a form for the user to edit the attributes of the poke.
-    	* The edit form will have a save button that sends the edits to the database and, when successfully updated, redirects the user to the home page.
-    * have a cancel button that does not save any of the changes the user just made.
+    	* The edit form will have a save button that sends the edits to the database and, if successful, displays the new pokemon on the page.
+    * have a cancel button that does not save any of the changes the user just made and clears the form.
 
 
 ![](http://cdn.pokestache.com/2014/3/15/de964d3caf9ea5e0b5fe0718dc7a0a98.gif)
@@ -71,10 +71,10 @@ Your finished product will
 
 ## Stretch Challenges
 
-2. **Allow the user to edit the poke image:** allow the user to change the URL for the poke image.
-3. **Add filters to organize the pokemon index page:** add a search bar to filter the pokemon by your search, or buttons to sort them alphabetically by name or element.
-4. **Add a button to reverse the pokemon display** Searching by name? Research toggle state and toggle the results in reverse order. 
-5. **Form validation** Check for quality poke-info before a pokmeon is allowed to enter the Pokemon database.
+1. **Add filters to organize the pokemon index page:** add a search bar to filter the pokemon by your search, or buttons to sort them alphabetically by name or element.
+2. **Add a button to reverse the pokemon display** Searching by name? Research toggle state and toggle the results in reverse order. 
+3. **Form validation** Check for quality poke-info before a pokmeon is allowed to enter the Pokemon database. Prompt the user for necessary changes when a field is missing or incomplete.
+4. **Pokemon Battle** We're not exactly sure how this would work, but allow the user to select two poke and "battle" (randomly decide who wins the match). Maybe do this on a separate page.
 
 ## Questions? Frustrations? Don't fret! Slack your friends or read some documentations!
 ![](http://i.giphy.com/3oEjHCXDIwTkO5gxmo.gif)
