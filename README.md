@@ -10,7 +10,7 @@
 
 > NOTE: For ease of coding, a singular pokemon will be called a poke; the plural form will be pokemon.  
 
-In this lab, you'll be creating a simple pokemon app to keep track of pokemon.  We will provide you with the API enpoint; you will only need to work with an `index.html`, `app.js`, and `main.css`
+In this lab, you'll be creating a simple pokemon app to keep track of pokemon.  We will provide you with the API endpoint; you will only need to work with an `index.html`, `app.js`, and `main.css`
 
 When a user goes to `/`, they should see a list of all of the pokemon in the API. When a user goes to `/pokemon/:id`, they should see a single poke. On the `/pokemon/:id` page a user should be able to edit or delete a poke.
 
