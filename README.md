@@ -7,6 +7,7 @@
 | Get practice building an Angular client side |
 | Use $http to access a RESTful API |
 
+![](http://pa1.narvii.com/5816/ad020f8c79222aceb67a90cce51a9103bc5911ec_hq.gif)
 
 > NOTE: For ease of coding, a singular pokemon will be called a poke; the plural form will be pokemon.  
 
