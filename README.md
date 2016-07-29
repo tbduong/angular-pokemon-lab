@@ -49,7 +49,8 @@ Your finished product will
 
 1. Fork this repo, and clone it into your `wdi` folder on your local machine.
 2. Change directories into `angular-pokemon-lab`.
-3. If you see no errors, you're ready to start CRUDing! Build your templates, build your controllers, add a show route, win.
+3. If you see no errors, you're ready to start CRUDing! Build your layout, build your controllers, catch a Squirtle, win.
+4. Research the Pokemon API Endpoint [here](https://github.com/SF-WDI-LABS/super-crud-api)
 
 ## Stretch Challenges
 
