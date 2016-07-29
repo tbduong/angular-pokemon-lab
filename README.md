@@ -11,9 +11,9 @@
 
 > NOTE: For ease of coding, a singular pokemon will be called a poke; the plural form will be pokemon.  
 
-In this lab, you'll be creating a simple pokemon app to keep track of pokemon.  We will provide you with the API endpoint; you will only need to work with an `index.html`, `app.js`, and `main.css`
+In this lab, you'll be creating a simple pokemon app to keep track of pokemon.  We will provide you with the API endpoint; you will only need to work with an `index.html`, `app.js`, and `styles.css` file.
 
-When a user goes to `/`, they should see a list of all of the pokemon in the API. When a user goes to `/pokemon/:id`, they should see a single poke. On the `/pokemon/:id` page a user should be able to edit or delete a poke.
+When a user goes to `/`, they should see a list of all of the pokemon in the API.
 
 Here is an example of a `$http` call to fetch an index all pokemon:
 
@@ -55,18 +55,16 @@ Your finished product will
 3. If you see no errors, you're ready to start CRUDing! Build your layout, build your controllers, catch a Squirtle, win.
 4. Research the Pokemon API Endpoint [here](https://github.com/SF-WDI-LABS/super-crud-api)
 
-#### Separate assets into directories `scripts`, `styles`
+#### Keep your directory structure clean
 
-<pre>
-├── README.md
-├── index.html
-├── scripts
-│   └── app.js
-├── styles
-│   └── styles.css
-└── images
-    └── spinner.gif
-</pre>
+    ├── README.md
+    ├── index.html
+    ├── scripts
+    │   └── app.js
+    ├── styles
+    │   └── styles.css
+    └── images
+        └── spinner.gif
 
 
 ## Stretch Challenges
