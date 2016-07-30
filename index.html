@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="pokedex">
 <head>
   <meta charset="utf-8">
+  <title>Pokedex</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="styles/styles.css">
 
-  <script src="/vendor/angular/angular.min.js"></script>
-  <script src="/vendor/angular-route/angular-route.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
   <script type="text/javascript" src="./scripts/app.js"></script>
 
-  <title>Pokedex</title>
-</head>
-<body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Pokedex</h1>
-      <p>Your Pokemon tracker.</p>
-    </div>
-  </div>
 
-  <div ng-repeat="">
+</script>
+
+</head>
+
+<body>
+  <div ng-controller="PokemonIndexController as pokemonCtrl">
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Pokedex</h1>
+        <p>Your Pokemon tracker.</p>
+      </div>
+    </div>
+
+    <form>
+      <label for="pokemon-name" class="form-group">New Pokemon Name</label>
+      <input type="text" class="form-control" placeholder="New Pokemon Name">
+      <label for="EvolvedFrom" class="form-group">What did it evolve from?</label>
+      <input type="text" class="form-control" placeholder="Evolves from..">
+    </form>
+<hr></hr>
+<h2> Pokemon Index </h2>
+    <br></br>
+    <div ng-repeat="pokemon in pokemonCtrl.pokemonList | orderBy: 'pokedex'">
       <div class="col-md-9 col-md-offset-1">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="col-md-8 col-xs-11">
-              <h3> Pokemon Name: </h3>
-              <p> Pokedex #: </p>
-              <p> Evolves from: </p>
-              <img src="">
-
-
+              <h3> Pokemon Name: {{pokemon.name}} </h3>
+              <p> Pokedex #: {{pokemon.pokedex}} </p>
+              <p> Evolves from: {{pokemon.evolves_from}} </p>
+              <img src={{pokemon.image}} alt="Pokemon" />
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 </body>
 </html>
