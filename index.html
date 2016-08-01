@@ -25,7 +25,7 @@
       </div>
     </div>
 
-<div class="col-md-7">
+<div class="col-md-7 col-md-offset-2">
     <form>
       <label for="pokemon-name" class="form-group">New Pokemon Name</label>
       <input type="text" class="form-control" placeholder="New Pokemon Name" ng-model="pokemonCtrl.newPoke.name">
@@ -49,9 +49,9 @@
             <span class="input-group-btn">
               <button class="btn btn-default" type="button">Go!</button>
             </span>
-            <input type="text" class="form-control" name="search" placeholder="search"  ng-model="search">
+            <input type="text" class="form-control" name="search" placeholder="Search for Pokemon"  ng-model="search">
           </div>
-
+<hr></hr>
     <h2> Pokemon Index </h2>
     <br></br>
     <div ng-repeat="pokemon in pokemonCtrl.pokemonList | orderBy: 'pokedex' | filter: search">

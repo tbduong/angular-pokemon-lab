@@ -1,6 +1,13 @@
 .jumbotron {
   background-image: url(../images/redbackground.jpg);
   opacity: .9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+    text-shadow: 50px;
+    color: white;
 }
 
 
@@ -23,4 +30,16 @@ h1 {
 
 .col-md-9{
     background-color: darkgray;
+}
+
+.panel {
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.form-control {
+      box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+body {
+    background-color: lightgray;
 }

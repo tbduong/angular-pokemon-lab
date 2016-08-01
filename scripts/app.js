@@ -18,8 +18,6 @@ $http({
       console.log("ERROR! Error retrieving data,", response);
 });
 
-// //POST new pokemon
-
 //DELETE poke
 pm.deletePoke = function(pokemon) {
     $http({
@@ -46,7 +44,7 @@ pm.editPoke = function(pokemon) {
     });
 };
 
-
+//POST new pokemon
 
 
 
