@@ -56,12 +56,14 @@
             <div class="col-md-8 col-xs-11">
 
               <h3> Pokemon Name: {{pokemon.name}} </h3>
+              <input ng-show="editing" ng-model="pokemon.name" type="text" class="form-control input-md">
 
               <p> Pokedex #: {{pokemon.pokedex}} </p>
 
               <p> Evolves from: {{pokemon.evolves_from}} </p>
 
-              <img src={{pokemon.image}} alt="Pokemon" />
+              <img src={{pokemon.image}} alt="Pokemon"/>
+              <input ng-show="editing" ng-model="pokemon.image" type="text" class="form-control input-md">
 
               <button type="button" class="btn btn-danger" ng-click="pokemonCtrl.deletePoke(pokemon)">Delete Album</button>
 
