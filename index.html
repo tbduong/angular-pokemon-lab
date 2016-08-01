@@ -65,7 +65,9 @@
 
               <button type="button" class="btn btn-danger" ng-click="pokemonCtrl.deletePoke(pokemon)">Delete Album</button>
 
-              <button type="button" class="btn btn-success" ng-click="pokemonCtrl.editPoke(pokemon)">Edit Album</button>
+              <button type="button" class="btn btn-success" ng-click="pokemonCtrl.editPoke(pokemon); editing = false" ng-show="editing">Save Changes</button>
+
+              <button type="button" class="btn btn-primary" ng-click="editing = true" ng-hide="editing">Edit Album</button>
 
             </div>
           </div>
