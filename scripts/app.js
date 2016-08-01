@@ -18,7 +18,22 @@ $http({
       console.log("ERROR! Error retrieving data,", response);
 });
 
-//
+// //POST new pokemon
+
+//DELETE poke
+pm.deletePoke = function(pokemon) {
+    $http({
+        method: 'DELETE',
+        url: 'https://super-crud.herokuapp.com/pokemon/' + pokemon._id
+    }).then(function successCallback(json) {
+        var pokeIndex = pm.pokemonList.indexOf(pokemon);
+        pm.pokemonList.splice(pokeIndex, 1);
+    }, function errorCallback(response) {
+        console.log("ERROR! Could not delete this pokemon.", response);
+    });
+  };
+
+  //EDIT poke
 
 
 
