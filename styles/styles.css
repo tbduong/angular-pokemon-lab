@@ -1,7 +1,26 @@
+.jumbotron {
+  background-image: url(../images/redbackground.jpg);
+  opacity: .9;
+}
+
+
 h2 {
-    text-align: center;
+  text-align: center;
+  font-weight: bold;
 }
 
 img {
-    float: right;
+  float: right;
+  height: 190px;
+  width: 195px;
+}
+
+h1 {
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.col-md-9{
+    background-color: darkgray;
 }

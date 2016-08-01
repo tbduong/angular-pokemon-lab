@@ -25,9 +25,7 @@
       </div>
     </div>
 
-    <h3> Add a new Pokemon to the Pokedex </h3>
-    <hr></hr>
-
+<div class="col-md-7">
     <form>
       <label for="pokemon-name" class="form-group">New Pokemon Name</label>
       <input type="text" class="form-control" placeholder="New Pokemon Name" ng-model="pokemonCtrl.newPoke.name">
@@ -40,27 +38,36 @@
 
       <label for="pokeImage" class="form-group">Pokemon Photo</label>
       <input type="text" class="form-control" placeholder="e.g: http://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png" ng-model="pokemonCtrl.newPoke.image">
-
-      <hr></hr>
+      <br></br>
       <button type="submit" class="btn btn-success">Submit New Pokemon</button>
 
     </form>
-
+<div>
     <hr></hr>
+    <h2> Search for Pokemon </h2>
+        <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+            <input type="text" class="form-control" name="search" placeholder="search"  ng-model="search">
+          </div>
+
     <h2> Pokemon Index </h2>
     <br></br>
-    <div ng-repeat="pokemon in pokemonCtrl.pokemonList | orderBy: 'pokedex'">
+    <div ng-repeat="pokemon in pokemonCtrl.pokemonList | orderBy: 'pokedex' | filter: search">
       <div class="col-md-9 col-md-offset-1">
         <div class="panel panel-default">
           <div class="panel-body">
             <div class="col-md-8 col-xs-11">
 
-              <h3> Pokemon Name: {{pokemon.name}} </h3>
+              <h3> {{pokemon.name}} </h3>
               <input ng-show="editing" ng-model="pokemon.name" type="text" class="form-control input-md">
 
-              <p> Pokedex #: {{pokemon.pokedex}} </p>
+              <p> <b>Pokedex #:</b> {{pokemon.pokedex}} </p>
+              <input ng-show="editing" ng-model="pokemon.pokedex" type="text" class="form-control input-md">
 
-              <p> Evolves from: {{pokemon.evolves_from}} </p>
+              <p> <b>Evolves from:</b> {{pokemon.evolves_from}} </p>
+              <input ng-show="editing" ng-model="pokemon.evolves_from" type="text" class="form-control input-md">
 
               <img src={{pokemon.image}} alt="Pokemon"/>
               <input ng-show="editing" ng-model="pokemon.image" type="text" class="form-control input-md">
