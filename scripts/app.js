@@ -34,7 +34,17 @@ pm.deletePoke = function(pokemon) {
   };
 
   //EDIT poke
-
+pm.editPoke = function(pokemon) {
+    $http({
+        method: 'PUT',
+        url: 'https://super-crud.herokuapp.com/pokemon/' + pokemon._id,
+        data: pokemon
+    }).then(function successCallback(json){
+        console.log(json);
+    }, function errorCallback(response) {
+        cosole.log("ERROR! Could not EDIT this pokemon's information:", response);
+    });
+};
 
 
 
